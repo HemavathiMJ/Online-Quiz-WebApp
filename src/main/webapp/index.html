@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial; background: #f4f4f9; text-align: center; padding-top: 100px; }
+        .container { background: white; width: 400px; margin: auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        input, button { padding: 12px; margin: 10px; width: 80%; font-size: 16px; }
+        button { background: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome to Online Quiz</h2>
+    <form action="quiz" method="post">
+        <input type="hidden" name="action" value="start">
+        <input type="text" name="username" placeholder="Enter your name" required><br><br>
+        <button type="submit">Start Quiz</button>
+    </form>
+</div>
+</body>
+</html>
